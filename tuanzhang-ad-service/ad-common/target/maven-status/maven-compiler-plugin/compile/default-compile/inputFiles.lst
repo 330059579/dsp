@@ -1,0 +1,9 @@
+D:\tuanzhang\IdeaProjects\tuanzhang-ad-spring-Cloud\tuanzhang-ad-service\ad-common\src\main\java\com\tuanzhang\ad\vo\BaseResult.java
+D:\tuanzhang\IdeaProjects\tuanzhang-ad-spring-Cloud\tuanzhang-ad-service\ad-common\src\main\java\com\tuanzhang\ad\constant\CreativeType.java
+D:\tuanzhang\IdeaProjects\tuanzhang-ad-spring-Cloud\tuanzhang-ad-service\ad-common\src\main\java\com\tuanzhang\ad\conf\WebConfiguration.java
+D:\tuanzhang\IdeaProjects\tuanzhang-ad-spring-Cloud\tuanzhang-ad-service\ad-common\src\main\java\com\tuanzhang\ad\advice\CommonResponseDataService.java
+D:\tuanzhang\IdeaProjects\tuanzhang-ad-spring-Cloud\tuanzhang-ad-service\ad-common\src\main\java\com\tuanzhang\ad\exception\AdException.java
+D:\tuanzhang\IdeaProjects\tuanzhang-ad-spring-Cloud\tuanzhang-ad-service\ad-common\src\main\java\com\tuanzhang\ad\constant\MaterialType.java
+D:\tuanzhang\IdeaProjects\tuanzhang-ad-spring-Cloud\tuanzhang-ad-service\ad-common\src\main\java\com\tuanzhang\ad\constant\CommonStatus.java
+D:\tuanzhang\IdeaProjects\tuanzhang-ad-spring-Cloud\tuanzhang-ad-service\ad-common\src\main\java\com\tuanzhang\ad\advice\GlobalExceptionAdvice.java
+D:\tuanzhang\IdeaProjects\tuanzhang-ad-spring-Cloud\tuanzhang-ad-service\ad-common\src\main\java\com\tuanzhang\ad\annotation\IgnoreResponseAdvice.java
