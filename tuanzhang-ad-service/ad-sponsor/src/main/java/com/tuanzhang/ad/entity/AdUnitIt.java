@@ -11,6 +11,7 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name="ad_unit_it")
+@Entity
 public class AdUnitIt {
 
     @Id

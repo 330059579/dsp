@@ -21,7 +21,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
-@Service("adPlanService")
 public class AdPlanServiceImpl implements AdPlanService {
 
     @Resource
@@ -77,6 +76,7 @@ public class AdPlanServiceImpl implements AdPlanService {
         adplan.setStartDate(DateUtils.parseDate(request.getStartDate()));
         adplan.setEndDate(DateUtils.parseDate(request.getEndDate()));
 
+        //save 有主键会更新，没有则插入
         AdPlan plan = adPlanRepository.save(adplan);
 
         return new AdPlanReponse(plan.getId(), plan.getPlanName());

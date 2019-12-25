@@ -13,6 +13,7 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name="ad_unit")
+@Entity
 public class AdUnit {
 
     @Id

@@ -22,7 +22,7 @@ public class AdUserServiceImpl implements AdUserService {
 
     @Override
     @Transactional
-    public CreateUserResponse createUser(CreateUserRequest request) throws Exception {
+    public CreateUserResponse createUser(CreateUserRequest request) throws AdException {
         if (!request.valdate()) {
             throw new AdException(Constants.ERRORMSG.REQUEST_PARAMS_ERR);
         }

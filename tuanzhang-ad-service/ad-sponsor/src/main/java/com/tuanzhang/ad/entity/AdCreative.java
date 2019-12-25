@@ -12,6 +12,7 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name="ad_creative")
+@Entity
 public class AdCreative {
 
     @Id

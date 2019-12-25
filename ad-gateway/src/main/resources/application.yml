@@ -9,3 +9,15 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8000/eureka/
+
+# 配置网关转发
+zuul:
+  prefix: /imooc
+  routes:
+    sponsor:
+      #投放服务中配置的前缀，拦截ad-sponsor开头的请求，根据注册的serviceId转发到指定服务
+      path: /ad-sponsor/**
+      #投放服务的名字
+      serviceId: eureka-client-ad-sponsor
+      #不跳过前缀
+      strip-prefix: false
