@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ad-service:war">
+    <output-path>$PROJECT_DIR$/ad-service/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>ad-service</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ad-service.war">
+      <element id="artifact" artifact-name="ad-service:war exploded" />
+    </root>
+  </artifact>
+</component>

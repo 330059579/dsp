@@ -8,7 +8,6 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 @EnableZuulProxy
 @SpringCloudApplication
-
 public class ZuulGateWayApplication {
 
     public static void main(String[] args) {

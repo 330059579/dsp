@@ -12,7 +12,7 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
 @Slf4j
-/*@Component*/
+@Component
 public class AccessLogFilter extends ZuulFilter {
     @Override
     public String filterType() {
@@ -30,9 +30,8 @@ public class AccessLogFilter extends ZuulFilter {
     }
 
     @Override
-    @Autowired
-    @Resource
     public Object run() throws ZuulException {
+        System.out.println("2222222222222222222");
         RequestContext context = RequestContext.getCurrentContext();
         HttpServletRequest request = context.getRequest();
         Long startTime = (Long) context.get("startTime");
