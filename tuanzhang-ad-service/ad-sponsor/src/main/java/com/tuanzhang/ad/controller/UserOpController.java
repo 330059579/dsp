@@ -1,6 +1,5 @@
 package com.tuanzhang.ad.controller;
 
-import com.alibaba.fastjson.JSON;
 import com.tuanzhang.ad.exception.AdException;
 import com.tuanzhang.ad.service.AdUserService;
 import com.tuanzhang.ad.vo.CreateUserRequest;
@@ -21,7 +20,6 @@ public class UserOpController {
 
     @PostMapping("/creative/user")
     public CreateUserResponse createUser(@RequestBody CreateUserRequest request) throws AdException {
-        log.info("createUser -> {}", JSON.toJSONString(request));
         return adUserService.createUser(request);
     }
 }

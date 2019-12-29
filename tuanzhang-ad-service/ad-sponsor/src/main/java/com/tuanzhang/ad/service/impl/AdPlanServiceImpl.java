@@ -21,6 +21,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
+@Service("adPlanService")
 public class AdPlanServiceImpl implements AdPlanService {
 
     @Resource
@@ -97,5 +98,10 @@ public class AdPlanServiceImpl implements AdPlanService {
         adplan.setPlanStatus(CommonStatus.INVALID.getStatus());
         adplan.setUpdateDate(new Date());
         adPlanRepository.save(adplan);
+    }
+
+    @Override
+    public AdPlan getInfo(Long i) {
+        return adPlanRepository.findById(i).get();
     }
 }

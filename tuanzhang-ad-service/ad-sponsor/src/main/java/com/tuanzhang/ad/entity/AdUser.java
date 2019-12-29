@@ -1,6 +1,5 @@
 package com.tuanzhang.ad.entity;
 
-import com.sun.scenario.effect.impl.prism.PrTexture;
 import com.tuanzhang.ad.constant.CommonStatus;
 import lombok.AllArgsConstructor;
 import lombok.Data;

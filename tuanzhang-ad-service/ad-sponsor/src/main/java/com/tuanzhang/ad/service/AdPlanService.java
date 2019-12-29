@@ -17,4 +17,6 @@ public interface AdPlanService {
     AdPlanReponse updateAdPlan(AdPlanRequest request) throws AdException;
 
     void deteteAdPlan(AdPlanRequest request) throws AdException;
+
+    AdPlan getInfo(Long i);
 }

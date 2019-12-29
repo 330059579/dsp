@@ -1,7 +1,5 @@
 package com.tuanzhang.ad.advice;
 
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
 import com.tuanzhang.ad.annotation.IgnoreResponseAdvice;
 import com.tuanzhang.ad.vo.BaseResult;
 import org.springframework.core.MethodParameter;
@@ -10,11 +8,8 @@ import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.server.ServerHttpRequest;
 import org.springframework.http.server.ServerHttpResponse;
 import org.springframework.lang.Nullable;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
-
-import java.util.Map;
 
 @RestControllerAdvice
 public class CommonResponseDataService implements ResponseBodyAdvice<Object> {
@@ -23,12 +18,12 @@ public class CommonResponseDataService implements ResponseBodyAdvice<Object> {
     public boolean supports(MethodParameter methodParameter, Class<? extends HttpMessageConverter<?>> aClass) {
 
         //若类上有IgnoreResponseAdvice注解不拦截
-        if (methodParameter.getDeclaringClass().isAnnotationPresent(IgnoreResponseAdvice.class)){
+        if (methodParameter.getDeclaringClass().isAnnotationPresent(IgnoreResponseAdvice.class)) {
             return false;
         }
 
         //若方法上有IgnoreResponseAdvice注解不拦截
-        if (methodParameter.getMethod().isAnnotationPresent(IgnoreResponseAdvice.class)){
+        if (methodParameter.getMethod().isAnnotationPresent(IgnoreResponseAdvice.class)) {
             return false;
         }
         return true;

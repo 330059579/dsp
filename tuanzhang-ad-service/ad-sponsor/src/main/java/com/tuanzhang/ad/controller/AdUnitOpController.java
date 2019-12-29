@@ -1,14 +1,12 @@
 package com.tuanzhang.ad.controller;
 
 
-import com.tuanzhang.ad.entity.AdUnitDistrict;
 import com.tuanzhang.ad.exception.AdException;
 import com.tuanzhang.ad.service.AdUnitService;
 import com.tuanzhang.ad.vo.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;

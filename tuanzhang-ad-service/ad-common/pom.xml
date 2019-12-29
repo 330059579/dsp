@@ -18,11 +18,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency> <!-- JSON 处理工具 -->
-        <dependency>
+       <!-- <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>1.2.31</version>
-        </dependency>
+        </dependency>-->
     </dependencies>
     <!--SpringBoot 的 Maven 插件, 能够以 Maven 的方式为应用提供 SprinSpringBoot 应用打包为可执行的 jar 或 war 文件, 然后以通常的方-->
     <build>

@@ -12,8 +12,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EnableCircuitBreaker
 @EnableEurekaClient
 @SpringBootApplication
-@ComponentScan(basePackages = "com.tuanzhang.ad.service")
-@EnableJpaRepositories(basePackages = "com.tuanzhang.ad.dao")
 public class SponsortApplication {
 
     public static void main(String[] args) {

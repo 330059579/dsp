@@ -26,10 +26,11 @@ public class AdPlanOpController {
     }
 
 
-    @PostMapping("/test/aa")
-    public AdPlanReponse testAA() throws AdException {
+    @GetMapping("/test/aa")
+    public AdPlan testAA() throws AdException {
         System.out.println("hello world");
-        return new AdPlanReponse(10L, "test");
+        AdPlan adPlan = adPlanService.getInfo(1L);
+        return adPlan;
     }
 
     @PostMapping("/get/plan")
