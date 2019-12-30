@@ -12,7 +12,6 @@
         <module>ad-eureka</module>
         <module>ad-gateway</module>
         <module>tuanzhang-ad-service</module>
-        <module>test</module>
     </modules>
 
     <name>tuanzhang-ad-spring-Cloud</name>

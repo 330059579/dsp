@@ -12,8 +12,8 @@
     <artifactId>tuanzhang-ad-service</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>ad-common</module>
         <module>ad-sponsor</module>
+        <module>ad-commons</module>
     </modules>
 
 
