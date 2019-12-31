@@ -14,6 +14,6 @@ public class SponsortApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(SponsortApplication.class, args);
-        
+
     }
 }
