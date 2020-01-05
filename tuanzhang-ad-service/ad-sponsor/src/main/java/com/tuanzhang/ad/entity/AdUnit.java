@@ -43,12 +43,12 @@ public class AdUnit {
     private Integer budget;
 
     @Basic
-    @Column(name = "create_date", nullable = false)
+    @Column(name = "create_time", nullable = false)
     private Date createDate;
 
 
     @Basic
-    @Column(name = "update_date", nullable = false)
+    @Column(name = "update_time", nullable = false)
     private Date updateDate;
 
     public AdUnit(Long planId, String unitName, Integer positionType,

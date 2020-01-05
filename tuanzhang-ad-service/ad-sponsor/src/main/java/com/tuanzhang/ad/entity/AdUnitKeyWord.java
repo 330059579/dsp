@@ -24,16 +24,16 @@ public class AdUnitKeyWord {
     private Long unitId;
 
     @Basic
-    @Column(name = "keyword", nullable = false)
+    @Column(name = "keyWord", nullable = false)
     private String keyWord;
 
     @Basic
-    @Column(name = "create_date", nullable = false)
+    @Column(name = "create_time", nullable = false)
     private Date createDate;
 
 
     @Basic
-    @Column(name = "update_date", nullable = false)
+    @Column(name = "update_time", nullable = false)
     private Date updateDate;
 
     public AdUnitKeyWord(Long unitId, String keyWord) {
