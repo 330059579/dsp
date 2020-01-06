@@ -1,11 +1,12 @@
 package com.tuanzhang.ad.service;
 
-import com.alibaba.fastjson.JSON;
 import com.github.shyiko.mysql.binlog.BinaryLogClient;
 import com.github.shyiko.mysql.binlog.event.DeleteRowsEventData;
 import com.github.shyiko.mysql.binlog.event.EventData;
 import com.github.shyiko.mysql.binlog.event.UpdateRowsEventData;
 import com.github.shyiko.mysql.binlog.event.WriteRowsEventData;
+
+import java.io.IOException;
 
 public class BinLogServiceTest {
 
@@ -28,5 +29,11 @@ public class BinLogServiceTest {
                 System.out.println("delete===" + data.toString());
             }
         });
+
+        try {
+            client.connect();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
