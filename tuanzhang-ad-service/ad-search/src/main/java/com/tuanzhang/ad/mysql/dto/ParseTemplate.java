@@ -15,7 +15,7 @@ public class ParseTemplate {
     private String databases;
     private Map<String, TableTemplate> tableTemplateMap = new HashMap<>();
     
-    private static ParseTemplate parse(Template template) {
+    public static ParseTemplate parse(Template template) {
         ParseTemplate parseTemplate = new ParseTemplate();
         parseTemplate.setDatabases(template.getDatabases());
 
