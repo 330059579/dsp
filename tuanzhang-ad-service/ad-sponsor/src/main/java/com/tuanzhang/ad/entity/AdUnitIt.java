@@ -28,12 +28,12 @@ public class AdUnitIt {
     private String itTag;
 
     @Basic
-    @Column(name = "create_date", nullable = false)
+    @Column(name = "create_time", nullable = false)
     private Date createDate;
 
 
     @Basic
-    @Column(name = "update_date", nullable = false)
+    @Column(name = "update_time", nullable = false)
     private Date updateDate;
 
     public AdUnitIt(Long unitId, String itTag) {

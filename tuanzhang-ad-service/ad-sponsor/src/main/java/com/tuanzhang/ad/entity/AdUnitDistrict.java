@@ -32,12 +32,12 @@ public class AdUnitDistrict {
     private String city;
 
     @Basic
-    @Column(name = "create_date", nullable = false)
+    @Column(name = "create_time", nullable = false)
     private Date createDate;
 
 
     @Basic
-    @Column(name = "update_date", nullable = false)
+    @Column(name = "update_time", nullable = false)
     private Date updateDate;
 
     public AdUnitDistrict(Long unitId, String provice, String city) {
