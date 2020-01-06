@@ -31,6 +31,7 @@ public class BinLogServiceTest {
         });
 
         try {
+            
             client.connect();
         } catch (IOException e) {
             e.printStackTrace();
