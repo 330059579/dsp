@@ -6,6 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -20,5 +21,5 @@ public class MySqlRowData {
 
     private OpType opType;
 
-    private List<Map<String, String>> filedValueMap;
+    private List<Map<String, String>> filedValueMap = new ArrayList<>();
 }
