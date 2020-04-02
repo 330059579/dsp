@@ -17,7 +17,7 @@ public class MySqlRowData {
 
     private String tableName;
 
-    private String level;
+    private Integer level;
 
     private OpType opType;
 

@@ -93,7 +93,7 @@ public class Constant {
     }
 
 
-    private static Map<String, String> table2Db;
+    public static Map<String, String> table2Db;
 
     static {
         table2Db = new HashMap<>();
