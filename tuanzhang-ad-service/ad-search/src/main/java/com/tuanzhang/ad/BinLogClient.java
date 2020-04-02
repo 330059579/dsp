@@ -21,7 +21,7 @@ public class BinLogClient {
 
     public void connect(){
         new Thread(() ->{
-
+            System.out.println("11");
         }).start();
     }
 }
