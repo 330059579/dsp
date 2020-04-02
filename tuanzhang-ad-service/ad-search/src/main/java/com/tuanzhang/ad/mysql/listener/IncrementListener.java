@@ -8,6 +8,7 @@ import com.tuanzhang.ad.mysql.dto.MySqlRowData;
 import com.tuanzhang.ad.mysql.dto.TableTemplate;
 import com.tuanzhang.ad.sender.ISender;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 
 import javax.annotation.PostConstruct;
@@ -16,6 +17,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Component
 public class IncrementListener implements IListener {
 
     @Resource
