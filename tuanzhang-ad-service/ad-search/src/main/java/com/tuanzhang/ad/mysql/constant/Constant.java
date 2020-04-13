@@ -44,54 +44,54 @@ public class Constant {
     }
 
 
-    private static class AD_UNIT_TABLE_INFO {
-        private static final String TABLE_NAME = "ad_unit";
+    public static class AD_UNIT_TABLE_INFO {
+        public static final String TABLE_NAME = "ad_unit";
 
-        private static final String COLUMN_ID = "id";
+        public static final String COLUMN_ID = "id";
 
-        private static final String COLUMN_UNIT_STATUS = "unit_status";
+        public static final String COLUMN_UNIT_STATUS = "unit_status";
 
-        private static final String COLUMN_POSITION_TYPE = "position_type";
+        public static final String COLUMN_POSITION_TYPE = "position_type";
 
-        private static final String COLUMN_PLAN_ID = "plan_id";
+        public static final String COLUMN_PLAN_ID = "plan_id";
     }
 
 
-    private static class AD_CREATIVE_UNIT_TABLE_INFO {
-        private static final String TABLE_NAME = "ad_creative_unit";
+    public static class AD_CREATIVE_UNIT_TABLE_INFO {
+        public static final String TABLE_NAME = "ad_creative_unit";
 
-        private static final String COLUMN_UNIT_ID = "unit_id";
+        public static final String COLUMN_UNIT_ID = "unit_id";
 
-        private static final String COLUMN_CREATIVE_ID = "creative_id";
+        public static final String COLUMN_CREATIVE_ID = "creative_id";
     }
 
 
-    private static class AD_UNIT_DISTRICT_TABLE_INFO {
-        private static final String TABLE_NAME = "ad_unit_district";
+    public static class AD_UNIT_DISTRICT_TABLE_INFO {
+        public static final String TABLE_NAME = "ad_unit_district";
 
-        private static final String COLUMN_UNIT_ID = "unit_id";
+        public static final String COLUMN_UNIT_ID = "unit_id";
 
-        private static final String COLUMN_PROVINCE = "province";
+        public static final String COLUMN_PROVINCE = "province";
 
-        private static final String COLUMN_CITY = "city";
+        public static final String COLUMN_CITY = "city";
     }
 
 
-    private static class AD_UNIT_IT_TABLE_INFO {
-        private static final String TABLE_NAME = "ad_unit_district";
+    public static class AD_UNIT_IT_TABLE_INFO {
+        public static final String TABLE_NAME = "ad_unit_it";
 
 
-        private static final String COLUMN_UNIT_ID = "unit_id";
+        public static final String COLUMN_UNIT_ID = "unit_id";
 
-        private static final String COLUMN_IT_TAG = "it_tag";
+        public static final String COLUMN_IT_TAG = "it_tag";
     }
 
-    private static class AD_UNIT_KEYWORD_TABLE_INFO {
-        private static final String TABLE_NAME = "ad_unit_keyword";
+    public static class AD_UNIT_KEYWORD_TABLE_INFO {
+        public static final String TABLE_NAME = "ad_unit_keyword";
 
-        private static final String COLUMN_UNIT_ID = "unit_id";
+        public static final String COLUMN_UNIT_ID = "unit_id";
 
-        private static final String COLUMN_KEYWORD = "keyword";
+        public static final String COLUMN_KEYWORD = "keyword";
     }
 
 
