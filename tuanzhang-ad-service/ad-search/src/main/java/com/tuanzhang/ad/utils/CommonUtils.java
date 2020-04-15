@@ -31,7 +31,7 @@ public class CommonUtils {
 
     public static Date parseDate(String dateString){
         try {
-            DateFormat dateFormat = new SimpleDateFormat("EEE MMM dd HH:mm:ss zzz yyy", Locale.US);
+            DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.US);
             return DateUtils.addHours(dateFormat.parse(dateString), -8);
         }catch (ParseException e) {
             e.printStackTrace();

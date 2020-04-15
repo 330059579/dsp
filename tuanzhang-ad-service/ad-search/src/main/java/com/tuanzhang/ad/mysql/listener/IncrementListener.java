@@ -21,7 +21,7 @@ import java.util.Map;
 public class IncrementListener implements IListener {
 
     @Resource
-    private ISender sender;
+    private ISender indexSender;
 
     private final  AggregationListener aggregationListener;
 
@@ -67,6 +67,6 @@ public class IncrementListener implements IListener {
             rowData.getFiledValueMap().add(_afterMap);
         }
 
-        sender.sender(rowData);
+        indexSender.sender(rowData);
     }
 }

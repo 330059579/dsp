@@ -1,5 +1,5 @@
 {
-  "database": "ad",
+  "databases": "ad",
   "tableList": [{
     "tableName": "ad_plan",
     "level": 2,

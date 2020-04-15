@@ -14,7 +14,7 @@ public class Constant {
 
         public static final String COLUMN_USER_ID = "user_id";
 
-        public static final String COLUMN_PLAN_STATUS= "status";
+        public static final String COLUMN_PLAN_STATUS= "plan_status";
 
         public static final String COLUMN_START_DATE = "start_date";
 

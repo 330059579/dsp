@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
 import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.util.List;
@@ -29,6 +30,7 @@ public class TemplateHolder {
             "column_name, ordinal_position from information_schema.columns " +
             "where table_schema = ? and table_name = ?";
 
+    @PostConstruct
     private void init(){
         loadJson("template.json");
     }
