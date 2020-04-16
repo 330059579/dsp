@@ -26,6 +26,7 @@ public class TemplateHolder {
    @Autowired
    private JdbcTemplate jdbcTemplate;
 
+   //这个sql可以查询表的索引和列明的对应关系
     private String SQL_SCHEMA = "select table_schema, table_name, " +
             "column_name, ordinal_position from information_schema.columns " +
             "where table_schema = ? and table_name = ?";

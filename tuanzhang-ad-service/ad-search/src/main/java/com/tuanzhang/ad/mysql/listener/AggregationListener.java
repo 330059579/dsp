@@ -41,6 +41,7 @@ public class AggregationListener implements BinaryLogClient.EventListener {
         EventType type = event.getHeader().getEventType();
         log.debug("event type: {}", type);
 
+        //TABLE_MAP类型记录的操作的数据库和数据表
         if (type == EventType.TABLE_MAP) {
             TableMapEventData data = event.getData();
             this.tableName = data.getTable();

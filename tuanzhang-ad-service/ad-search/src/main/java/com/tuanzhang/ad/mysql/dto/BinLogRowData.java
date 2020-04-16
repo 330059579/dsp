@@ -6,6 +6,7 @@ import lombok.Data;
 import java.util.List;
 import java.util.Map;
 
+//将监听到的binlog日志字符串解析为此类
 @Data
 public class BinLogRowData {
 
