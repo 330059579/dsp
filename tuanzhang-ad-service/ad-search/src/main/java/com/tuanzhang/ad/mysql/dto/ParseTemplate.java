@@ -33,11 +33,11 @@ public class ParseTemplate {
                 getAndCreateIfNeed(OpType.ADD, opTypeFiledSetMap,ArrayList::new).add(column.getColumn());
             }
 
-            for (JsonTable.Column column : table.getInsert()) {
+            for (JsonTable.Column column : table.getUpdate()) {
                 getAndCreateIfNeed(OpType.UPDATE, opTypeFiledSetMap,ArrayList::new).add(column.getColumn());
             }
 
-            for (JsonTable.Column column : table.getInsert()) {
+            for (JsonTable.Column column : table.getDelete()) {
                 getAndCreateIfNeed(OpType.DELETE, opTypeFiledSetMap,ArrayList::new).add(column.getColumn());
             }
         }
