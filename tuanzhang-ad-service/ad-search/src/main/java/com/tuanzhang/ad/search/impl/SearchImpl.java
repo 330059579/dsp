@@ -1,5 +1,6 @@
 package com.tuanzhang.ad.search.impl;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.tuanzhang.ad.constant.CommonStatus;
 import com.tuanzhang.ad.index.DataTable;
 import com.tuanzhang.ad.index.adunit.AdUnitIndex;
@@ -28,7 +29,17 @@ import java.util.*;
 
 @Service
 public class SearchImpl implements ISearch {
+
+    public SearchResponse fallback(SearchRequest request, Throwable e) {
+        return null;
+    }
+
     @Override
+    //定义在方法上面，如果该方法超时，或失败，则调用指定的消费降级方法fallback, fallback必须和fetch在同一类中
+    //使用HystrixCommand注解时，启动类上必须有EnableCircuitBreaker注解，原理是定义了这个注解后，或通过aop拦截所有加了HystrixCommand的方法，并将方法扔到
+    //Hystrix线程池中，发生异常后，通过反射调用同类中的fallback
+    //注意 HystrixCommand 效率很低，一般只和Fein结合使用
+    @HystrixCommand(fallbackMethod = "fallback")
     public SearchResponse fetch(SearchRequest request) {
         List<AdSlot> adSlots = request.getRequestInfo().getAdSlots();
         KeywordFeature keywordFeature = request.getFeatureInfo().getKeywordFeature();
