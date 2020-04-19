@@ -15,7 +15,7 @@ spring:
     open-in-view: false
 
   datasource:
-    url: jdbc:mysql://94.191.72.230:3306/ad?useUnicode=true&characterEncoding=utf-8&useSSL=false # 数据库地址、端口号、DB 需要根据你的配置去填 写
+    url: jdbc:mysql://106.52.236.197:3306/ad?useUnicode=true&characterEncoding=utf-8&useSSL=false # 数据库地址、端口号、DB 需要根据你的配置去填 写
     username: root # 需要填写你的数据库用户名
     password: 123456 # 需要填写你的数据库密码
     tomcat:   # tomcat数据库连接池
@@ -26,3 +26,4 @@ eureka:
     client:
       service-url:
         defaultZone: http://localhost:8000/eureka/
+      enable: false
