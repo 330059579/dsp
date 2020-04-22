@@ -135,9 +135,9 @@ public class SearchImpl implements ISearch {
             return;
         }
 
-        CollectionUtils.filter(creativeObjects, creative -> creative.getAuidStatus().equals(CommonStatus.VALID.getStatus())
+        CollectionUtils.filter(creativeObjects, creative -> creative.getAduiotStatus().equals(CommonStatus.VALID.getStatus())
                   && creative.getWidth().equals(width)
-                  && creative.getHeight().equals(height)
+                  && creative.getHeigit().equals(height)
                   && type.contains(creative.getType()));
     }
 

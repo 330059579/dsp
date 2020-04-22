@@ -19,11 +19,11 @@ public class CreativeObject {
 
     private Integer materialType;
 
-    private Integer height;
+    private Integer heigit;
 
     private Integer width;
 
-    private Integer auidStatus;
+    private Integer aduiotStatus;
 
     private String adUrl;
 
@@ -44,16 +44,16 @@ public class CreativeObject {
             this.materialType = object.getMaterialType();
         }
 
-        if (null != object.getHeight()) {
-            this.height = object.getHeight();
+        if (null != object.getHeigit()) {
+            this.heigit = object.getHeigit();
         }
 
         if (null != object.getWidth()) {
             this.width = object.getWidth();
         }
 
-        if (null != object.getAuidStatus()){
-            this.auidStatus = object.getAuidStatus();
+        if (null != object.getAduiotStatus()){
+            this.aduiotStatus = object.getAduiotStatus();
         }
 
         if (null != object.getAdUrl()) {
